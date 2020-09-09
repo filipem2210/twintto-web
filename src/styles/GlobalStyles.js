@@ -6,7 +6,7 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 
-    color: var(--white);
+    color: ${props => props.theme.colors.text};
   }
 
   html, body, #root {
@@ -24,7 +24,7 @@ export default createGlobalStyle`
   }
 
   html {
-    background: var(--primary);
+    background: ${props => props.theme.colors.background};
   }
 
   :root {

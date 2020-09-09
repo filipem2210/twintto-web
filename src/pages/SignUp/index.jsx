@@ -24,7 +24,7 @@ import {
   FooterCopyright
 } from './styles'
 
-function SignUp() {
+export default function SignUp() {
   const [showSignUpModal, setShowSignUpModal] = useState(false)
 
   return (
@@ -87,5 +87,3 @@ function SignUp() {
     </>
   )
 }
-
-export default SignUp

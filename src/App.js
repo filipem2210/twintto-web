@@ -1,9 +1,11 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
+import Routes from './routes'
+
 import usePersistedState from './utils/usePersistedState'
 
-import SwitchButton from './components/SwitchButton'
+import SwitchThemeButton from './components/SwitchThemeButton'
 
 import light from './styles/themes/light'
 import dark from './styles/themes/dark'
@@ -20,7 +22,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <SwitchButton toggleTheme={toggleTheme} />
+      <SwitchThemeButton toggleTheme={toggleTheme} />
+      <Routes />
     </ThemeProvider>
   )
 }

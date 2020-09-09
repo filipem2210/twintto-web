@@ -36,5 +36,6 @@ export default createGlobalStyle`
     --true-white: #FFF;
     --gray-secondary: #8899A6;
     --error: #c0392b;
+    --input-background: #192734;
   }
 `

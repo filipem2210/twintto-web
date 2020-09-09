@@ -62,6 +62,8 @@ export const SignUpButton = styled(PrimaryButton)`
   width: 100%;
   margin-top: 15px;
   color: var(--true-white);
+  transition-property: background-color;
+  transition-duration: 0.2s;
 `
 
 export const SignInButton = styled(Link)`
@@ -79,9 +81,11 @@ export const SignInButton = styled(Link)`
   cursor: pointer;
   outline: 0;
   margin-top: 15px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
 
   &:hover {
-    background: var(--twitter-dark-hover);
+    background: var(--twitter-dark-hover-button);
   }
 `
 

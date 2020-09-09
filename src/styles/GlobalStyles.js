@@ -30,6 +30,7 @@ export default createGlobalStyle`
   :root {
     --twitter: #33A1F2;
     --twitter-dark-hover: #011017;
+    --twitter-dark-hover-button: rgba(29, 161, 242, .1);
     --background-landing-page: #15202b;
     --background-banner: #71c9f8;
     --background-banner-logo: #1da1f2;

@@ -28,6 +28,12 @@ export default createGlobalStyle`
   }
 
   :root {
+    --twitter: #33A1F2;
+    --twitter-dark-hover: #011017;
     --background-landing-page: #15202b;
+    --background-banner: #71c9f8;
+    --background-banner-logo: #1da1f2;
+    --true-white: #FFF;
+    --gray-secondary: #8899A6;
   }
 `

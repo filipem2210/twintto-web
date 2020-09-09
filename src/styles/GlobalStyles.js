@@ -6,7 +6,7 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 
-    color: ${props => props.theme.colors.color};
+    color: ${props => props.theme.colors.text};
   }
 
   html, body, #root {

@@ -28,17 +28,10 @@ export const Wrapper = styled.div`
   form {
     width: 100%;
   }
-`
-
-export const Header = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   > svg {
     fill: var(--true-white);
     height: 35px;
-    justify-self: flex-start;
   }
 `
 

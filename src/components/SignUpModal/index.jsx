@@ -7,7 +7,6 @@ import { ReactComponent as Logo } from '../../assets/logo.svg'
 import {
   Container,
   Wrapper,
-  Header,
   Title,
   InputAndLabel,
   Label,
@@ -38,9 +37,7 @@ export default function SignUpModal() {
   return (
     <Container>
       <Wrapper>
-        <Header>
-          <Logo />
-        </Header>
+        <Logo />
         <Title>Criar sua conta</Title>
         <Formik
           initialValues={{

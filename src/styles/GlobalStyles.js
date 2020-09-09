@@ -35,5 +35,6 @@ export default createGlobalStyle`
     --background-banner-logo: #1da1f2;
     --true-white: #FFF;
     --gray-secondary: #8899A6;
+    --error: #c0392b;
   }
 `

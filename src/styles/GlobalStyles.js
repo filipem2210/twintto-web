@@ -26,4 +26,8 @@ export default createGlobalStyle`
   html {
     background: ${props => props.theme.colors.primary};
   }
+
+  :root {
+    --background-landing-page: #15202b;
+  }
 `

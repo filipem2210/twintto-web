@@ -1,11 +1,11 @@
-import React /* , { useState } */ from 'react'
+import React, { useState } from 'react'
 
 import { ReactComponent as Logo } from '../../assets/logo.svg'
 import { ReactComponent as MagnifierIcon } from '../../assets/magnifier.svg'
 import { ReactComponent as PeopleIcon } from '../../assets/people.svg'
 import { ReactComponent as ChatIcon } from '../../assets/chat.svg'
 
-// import { SignUpModal } from '../../components/SignUpModal'
+import SignUpModal from '../../components/SignUpModal'
 
 import {
   Container,
@@ -25,11 +25,11 @@ import {
 } from './styles'
 
 function SignUp() {
-  // const [showSignUpModal, setShowSignUpModal] = useState(false)
+  const [showSignUpModal, setShowSignUpModal] = useState(false)
 
   return (
     <>
-      {/* {showSignUpModal && <SignUpModal />} */}
+      {showSignUpModal && <SignUpModal />}
       <Container>
         <Main>
           <Content>
@@ -37,7 +37,9 @@ function SignUp() {
               <Logo />
               <Title>Saiba o que está acontecendo no mundo agora</Title>
               <SubTitle>Inscreva-se no Twitter hoje mesmo.</SubTitle>
-              <SignUpButton>Inscrever-se</SignUpButton>
+              <SignUpButton onClick={() => setShowSignUpModal(true)}>
+                Inscrever-se
+              </SignUpButton>
               <SignInButton outlined={1} to="/signin">
                 Entrar
               </SignInButton>

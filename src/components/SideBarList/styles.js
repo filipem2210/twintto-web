@@ -28,7 +28,7 @@ export const Item = styled.div`
   }
 
   &:first-child {
-    padding-top: 13px;
+    padding-top: 10px;
   }
 
   &:last-child {

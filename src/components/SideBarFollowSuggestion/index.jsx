@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { Container, Info, FollowButton } from './styles'
 
-export default function FollowSuggestion({ name, nickname, avatarImg }) {
+export default function SideBarFollowSuggestion({ name, nickname, avatarImg }) {
   return (
     <Container>
       <div>
@@ -20,7 +20,7 @@ export default function FollowSuggestion({ name, nickname, avatarImg }) {
   )
 }
 
-FollowSuggestion.propTypes = {
+SideBarFollowSuggestion.propTypes = {
   name: PropTypes.string.isRequired,
   nickname: PropTypes.string.isRequired,
   avatarImg: PropTypes.string.isRequired

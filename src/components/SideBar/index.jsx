@@ -2,8 +2,8 @@ import React from 'react'
 import StickyBox from 'react-sticky-box'
 
 import SideBarList from '../SideBarList'
-import FollowSuggestion from '../FollowSuggestion'
-import News from '../News'
+import SideBarFollowSuggestion from '../FollowSuggestion'
+import SideBarNews from '../SideBarNews'
 
 import {
   Container,
@@ -26,13 +26,13 @@ export default function SideBar() {
           <SideBarList
             title="Quem seguir"
             elements={[
-              <FollowSuggestion
+              <SideBarFollowSuggestion
                 key="firstFollowSuggestion"
                 name="ca"
                 nickname="@cbbp_"
                 avatarImg="https://pbs.twimg.com/profile_images/1294394874083651584/Bc0ueZnx_bigger.jpg"
               />,
-              <FollowSuggestion
+              <SideBarFollowSuggestion
                 key="secondFollowSuggestion"
                 name="Koerito"
                 nickname="@rkoerich"
@@ -47,20 +47,20 @@ export default function SideBar() {
           <SideBarList
             title="O que está acontecendo"
             elements={[
-              <News
+              <SideBarNews
                 key="firstNews"
                 topic="Política"
                 time="3"
                 title="Após DiCaprio criticar Bolsonaro sobre Amazônia, Salles questiona ator: 'Vai por seu dinheiro?'"
                 picture="https://pbs.twimg.com/semantic_core_img/1304050750016770048/BjxSOT4a?format=jpg&name=240x240"
               />,
-              <News
+              <SideBarNews
                 key="secondNews"
                 topic="Covid-19"
                 time="1"
                 title="Fiocruz vai testar vacina de tuberculose contra coronavírus"
               />,
-              <News
+              <SideBarNews
                 key="thirdNews"
                 topic="Copa Libertadores"
                 time="4"

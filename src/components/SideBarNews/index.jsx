@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { Container } from './styles'
 
-export default function News({ topic, time, title, picture }) {
+export default function SideBarNews({ topic, time, title, picture }) {
   return (
     <Container>
       <span>
@@ -17,7 +17,7 @@ export default function News({ topic, time, title, picture }) {
   )
 }
 
-News.propTypes = {
+SideBarNews.propTypes = {
   topic: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

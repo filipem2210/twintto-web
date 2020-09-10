@@ -1,11 +1,19 @@
 import React from 'react'
 
-import { Container } from './styles'
+import MenuBar from '../../components/MenuBar'
+// import Main from '../../components/Main'
+// import SideBar from '../../components/SideBar'
+
+import { Container, Wrapper } from './styles'
 
 export default function Profile() {
   return (
     <Container>
-      <h1>Profile</h1>
+      <Wrapper>
+        <MenuBar />
+        {/* <Main /> */}
+        {/* <SideBar /> */}
+      </Wrapper>
     </Container>
   )
 }

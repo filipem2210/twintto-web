@@ -10,7 +10,7 @@ export default {
     white: '#D9D9D9',
     trueWhite: '#FFF',
     text: '#000',
-    gray: '#7A7A7A',
+    gray: 'rgb(101, 119, 134)',
     outline: 'rgb(230, 236, 240)',
     retweet: '#00C06B',
     like: '#E8265E',

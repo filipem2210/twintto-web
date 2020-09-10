@@ -20,6 +20,7 @@ export default {
     hover: 'rgba(29, 161, 242, 0.1)',
     hoverButton: '#1a91da',
     hoverOutlineButton: 'rgba(29, 161, 242, 0.1)',
-    boxShadow: 'rgba(0, 0, 0, 0.2)'
+    boxShadow: 'rgba(0, 0, 0, 0.2)',
+    borderBottomPost: '#e6ecf0'
   }
 }

@@ -12,6 +12,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "react-sticky-box": "^0.9.3",
     "react-switch": "^5.0.1",
     "styled-components": "^5.2.0",
     "yup": "^0.29.3"

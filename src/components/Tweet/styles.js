@@ -157,11 +157,11 @@ export const Retweets = styled.div`
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: ${props => props.theme.colors.retweet};
+  color: ${props => props.theme.colors.gray};
 
   > svg {
     margin-right: 5px;
-    fill: ${props => props.theme.colors.retweet};
+    fill: ${props => props.theme.colors.gray};
   }
 
   &:hover {
@@ -169,6 +169,7 @@ export const Retweets = styled.div`
     color: ${props => props.theme.colors.retweet};
 
     > svg {
+      fill: ${props => props.theme.colors.retweet};
       background-color: ${props => props.theme.colors.retweetHover};
     }
   }
@@ -181,11 +182,11 @@ export const Likes = styled.div`
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: ${props => props.theme.colors.like};
+  color: ${props => props.theme.colors.gray};
 
   > svg {
     margin-right: 5px;
-    fill: ${props => props.theme.colors.like};
+    fill: ${props => props.theme.colors.gray};
   }
 
   &:hover {
@@ -193,6 +194,7 @@ export const Likes = styled.div`
     color: ${props => props.theme.colors.like};
 
     > svg {
+      fill: ${props => props.theme.colors.like};
       background-color: ${props => props.theme.colors.likeHover};
     }
   }

@@ -9,11 +9,12 @@ export default {
     trueWhite: '#FFF',
     text: '#000',
     gray: '#7A7A7A',
-    outline: '#2F3336',
+    outline: 'rgb(230, 236, 240)',
     retweet: '#00C06B',
     like: '#E8265E',
     twitter: '#33A1F2',
-    twitterDarkHover: '#011017',
-    twitterLightHover: '#2C8ED6'
+    hover: 'rgba(29, 161, 242, 0.1)',
+    hoverButton: '#1a91da',
+    boxShadow: 'rgba(0, 0, 0, 0.2)'
   }
 }

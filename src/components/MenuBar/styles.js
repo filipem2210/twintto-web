@@ -196,6 +196,7 @@ export const MoreIcon = styled(More)`
 
 export const WriteIcon = styled(Write)`
   ${iconCSS}
+  fill: ${props => props.theme.colors.trueWhite}
 `
 
 export const CheckIcon = styled(Check)`

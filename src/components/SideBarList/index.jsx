@@ -18,6 +18,6 @@ export default function List({ title, elements }) {
 }
 
 List.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   elements: PropTypes.array
 }

@@ -2,18 +2,11 @@ import React from 'react'
 
 import Tweet from '../Tweet'
 
-import { Container, Tabs, Tab, Tweets } from './styles'
+import { Container, Tweets } from './styles'
 
 export default function Feed() {
   return (
     <Container>
-      <Tabs>
-        <Tab className="active">Tweets</Tab>
-        <Tab>Tweets e respostas</Tab>
-        <Tab>Mídia</Tab>
-        <Tab>Curtidas</Tab>
-      </Tabs>
-
       <Tweets>
         <Tweet
           avatar="https://pbs.twimg.com/profile_images/1299146910238945281/VckzvGa9_bigger.jpg"

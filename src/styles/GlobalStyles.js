@@ -38,5 +38,6 @@ export default createGlobalStyle`
     --gray-secondary: #8899A6;
     --error: #c0392b;
     --input-background: #192734;
+    --outline: #2F3336;
   }
 `

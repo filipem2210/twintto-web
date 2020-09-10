@@ -2,7 +2,7 @@ import React from 'react'
 import StickyBox from 'react-sticky-box'
 
 import SideBarList from '../SideBarList'
-import SideBarFollowSuggestion from '../FollowSuggestion'
+import SideBarFollowSuggestion from '../SideBarFollowSuggestion'
 import SideBarNews from '../SideBarNews'
 
 import {

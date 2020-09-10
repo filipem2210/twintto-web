@@ -4,7 +4,7 @@ export default {
   colors: {
     primary: '#000',
     secondary: '#15181C',
-    sidebarBg: '#202327',
+    sidebarBg: '#15181c',
     sidebarHover: 'rgba(255, 255, 255, 0.03)',
     sidebarSearch: '#202327',
     white: '#D9D9D9',

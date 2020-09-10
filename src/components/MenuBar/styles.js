@@ -50,11 +50,11 @@ export const Logo = styled(LogoIcon)`
   margin-bottom: 10px;
   border-radius: 50%;
   padding: 5px;
-  fill: var(--true-white);
+  fill: ${props => props.theme.colors.twitter};
 
   &:hover {
     cursor: pointer;
-    background: var(--twitter-dark-hover);
+    background: ${props => props.theme.colors.hover};
   }
 `
 
@@ -67,7 +67,7 @@ const MenuButtonCSS = css`
   padding: 10px;
 
   &:hover {
-    background: var(--twitter-dark-hover);
+    background: ${props => props.theme.colors.hover};
     border-radius: 50%;
   }
 
@@ -98,7 +98,7 @@ const MenuButtonCSS = css`
   }
 
   &:hover {
-    background: var(--twitter-dark-hover);
+    background: ${props => props.theme.colors.hover};
     border-radius: 25px;
   }
 
@@ -106,8 +106,8 @@ const MenuButtonCSS = css`
   &.active {
     span,
     svg {
-      color: var(--twitter);
-      fill: var(--twitter);
+      color: ${props => props.theme.colors.twitter};
+      fill: ${props => props.theme.colors.twitter};
     }
   }
 `
@@ -124,6 +124,10 @@ export const MenuButton = styled.a`
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+
+    span {
+      color: ${props => props.theme.colors.trueWhite};
+    }
 
     width: 40px;
     height: 40px;
@@ -155,7 +159,7 @@ const iconCSS = css`
 
   width: 26px;
   height: 26px;
-  fill: var(--true-white);
+  fill: ${props => props.theme.colors.text};
 `
 
 export const HomeIcon = styled(Home)`
@@ -196,7 +200,7 @@ export const WriteIcon = styled(Write)`
 
 export const CheckIcon = styled(Check)`
   ${iconCSS}
-  fill: var(--twitter);
+  fill: ${props => props.theme.colors.twitter};
 `
 
 export const BottomSide = styled.div`
@@ -211,7 +215,7 @@ export const BottomSide = styled.div`
   &:hover {
     cursor: pointer;
     border-radius: 25px;
-    background: var(--twitter-dark-hover);
+    background: ${props => props.theme.colors.hover};
   }
 `
 
@@ -221,8 +225,8 @@ export const ProfileOptions = styled.div`
   left: 0;
   background-color: ${props => props.theme.colors.primary};
   width: 100%;
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px,
-    rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
+  box-shadow: ${props => props.theme.colors.boxShadow} 0px 0px 15px,
+    ${props => props.theme.colors.boxShadow} 0px 0px 3px 1px;
   border-radius: 15px;
 
   &:after {
@@ -235,13 +239,14 @@ export const ProfileOptions = styled.div`
     left: 50%;
     box-sizing: border-box;
 
-    border: 6px solid black;
-    border-color: transparent transparent #000 #000;
+    border: 6px solid ${props => props.theme.colors.primary};
+    border-color: transparent transparent
+      ${props => props.theme.colors.primary + props.theme.colors.primary};
 
     transform-origin: 0 0;
     transform: rotate(-45deg);
 
-    box-shadow: -3px 3px 3px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: -3px 3px 3px 0 ${props => props.theme.colors.boxShadow};
   }
 `
 
@@ -250,7 +255,7 @@ export const ProfileHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: solid 1px var(--outline);
+  border-bottom: solid 1px ${props => props.theme.colors.outline};
 
   > svg {
     height: 20px;
@@ -265,7 +270,7 @@ export const SignOut = styled.button`
 
   &:hover {
     cursor: pointer;
-    background-color: rgb(21, 24, 28);
+    background-color: ${props => props.theme.colors.hover};
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
   }
@@ -282,7 +287,7 @@ export const Avatar = styled.img`
   flex-shrink: 0;
 
   border-radius: 50%;
-  background: var(--gray-secondary);
+  background: ${props => props.theme.colors.gray};
 `
 
 export const ProfileData = styled.div`
@@ -296,7 +301,7 @@ export const ProfileData = styled.div`
     font-size: 14px;
 
     > span {
-      color: var(--gray-secondary);
+      color: ${props => props.theme.colors.gray};
     }
   }
 `
@@ -308,7 +313,7 @@ export const ProfileOptionsIcon = styled(ArrowDown)`
     display: inline-block;
     width: 20px;
     height: 20px;
-    fill: var(--true-white);
+    fill: ${props => props.theme.colors.text};
     margin-left: 30px;
     cursor: pointer;
   }

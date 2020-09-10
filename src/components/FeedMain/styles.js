@@ -5,4 +5,5 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 600px;
+  border-right: solid 1px ${props => props.theme.colors.outline};
 `

@@ -98,9 +98,8 @@ export const ImageContent = styled.img`
   margin-top: 12px;
   width: 100%;
   height: min(229px, max(175px, 41vw));
-  background-color: ${props => props.theme.colors.outline};
   border-radius: 14px;
-  border: solid 1px ${props => props.theme.colors.gray};
+  border: 1px solid ${props => props.theme.colors.outline};
   cursor: pointer;
 `
 

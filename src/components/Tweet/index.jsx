@@ -31,15 +31,17 @@ export default function Tweet({
   image,
   comments,
   retweets,
-  likes
+  likes,
+  retweet
 }) {
   return (
     <Container>
-      <Retweeted>
-        <RetweetIcon />
-        <span>Você retweetou</span>
-      </Retweeted>
-
+      {retweet && (
+        <Retweeted>
+          <RetweetIcon />
+          <span>Você retweetou</span>
+        </Retweeted>
+      )}
       <Body>
         <Avatar src={avatar} />
 
@@ -53,7 +55,7 @@ export default function Tweet({
 
           <Description>{description}</Description>
 
-          <ImageContent src={image} />
+          {image && <ImageContent src={image} />}
 
           <Icons>
             <Comments>
@@ -87,5 +89,6 @@ Tweet.propTypes = {
   image: PropTypes.string,
   comments: PropTypes.number,
   retweets: PropTypes.number,
-  likes: PropTypes.number
+  likes: PropTypes.number,
+  retweet: PropTypes.bool
 }

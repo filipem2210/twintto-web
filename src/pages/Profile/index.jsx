@@ -1,7 +1,7 @@
 import React from 'react'
 
 import MenuBar from '../../components/MenuBar'
-// import Main from '../../components/Main'
+import ProfileMain from '../../components/ProfileMain'
 import SideBar from '../../components/SideBar'
 
 import { Container, Wrapper } from './styles'
@@ -11,7 +11,7 @@ export default function Profile() {
     <Container>
       <Wrapper>
         <MenuBar />
-        {/* <Main /> */}
+        <ProfileMain />
         <SideBar />
       </Wrapper>
     </Container>

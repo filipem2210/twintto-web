@@ -97,6 +97,7 @@ export const Description = styled.p`
 export const ImageContent = styled.img`
   margin-top: 12px;
   width: 100%;
+  max-height: 330px;
   border-radius: 14px;
   border: 1px solid ${props => props.theme.colors.outline};
   cursor: pointer;

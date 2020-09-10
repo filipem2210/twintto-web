@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  text-align: center;
   border-bottom: 1px solid ${props => props.theme.colors.outline};
   margin-top: 10px;
 `

@@ -14,6 +14,7 @@ export const Container = styled.div`
   width: 100%;
   max-width: 600px;
   border-right: solid 1px ${props => props.theme.colors.outline};
+  border-left: solid 1px ${props => props.theme.colors.outline};
   max-height: 100%;
   overflow-y: auto;
 

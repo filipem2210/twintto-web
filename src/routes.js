@@ -4,6 +4,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import SignUp from './pages/SignUp'
 import SignIn from './pages/SignIn'
 import Profile from './pages/Profile'
+import Feed from './pages/Feed'
+
 import NotFound from './pages/NotFound'
 
 export default function App() {
@@ -13,6 +15,7 @@ export default function App() {
         <Route path="/signup" component={SignUp} />
         <Route path="/signin" component={SignIn} />
         <Route path="/profile" component={Profile} />
+        <Route path="/" exact component={Feed} />
 
         <Route path="*" component={NotFound} />
       </Switch>

@@ -173,6 +173,14 @@ export const Retweets = styled.div`
       background-color: ${props => props.theme.colors.retweetHover};
     }
   }
+
+  &.active {
+    color: ${props => props.theme.colors.retweet};
+
+    > svg {
+      fill: ${props => props.theme.colors.retweet};
+    }
+  }
 `
 export const RetweetsIcon = styled(Retweet)`
   ${iconCSS}

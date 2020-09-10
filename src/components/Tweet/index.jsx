@@ -62,7 +62,7 @@ export default function Tweet({
               <CommentIcon />
               {comments}
             </Comments>
-            <Retweets>
+            <Retweets className={retweet && 'active'}>
               <RetweetsIcon />
               {retweets}
             </Retweets>

@@ -15,9 +15,9 @@ export default function Feed() {
           date="20 de mai"
           description="Entendendo a web em 4 passos simples"
           image="https://pbs.twimg.com/media/EYfA145WAAE5Qm9?format=jpg&name=small"
-          comments="15"
-          retweets="281"
-          likes="1,3 mil"
+          comments={15}
+          retweets={281}
+          likes={125}
           retweet
         />
         <Tweet
@@ -26,10 +26,7 @@ export default function Feed() {
           user="@souzatali7"
           date="10 de set"
           description="queria ta tirando uma soneca com o ar condicionado no talo"
-          image=""
-          comments=""
-          retweets=""
-          likes="1"
+          likes={1}
         />
       </Tweets>
     </Container>

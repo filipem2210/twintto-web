@@ -24,7 +24,7 @@ export default function SideBar() {
       <StickyBox>
         <Body>
           <SideBarList
-            title="Quem seguir"
+            title="Talvez você curta"
             elements={[
               <SideBarFollowSuggestion
                 key="firstFollowSuggestion"

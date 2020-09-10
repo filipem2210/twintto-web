@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Tabs from '../Tabs'
 import Feed from '../Feed'
 import BottomMenu from '../BottomMenu'
 
@@ -69,6 +70,7 @@ export default function MainProfile() {
         </Followage>
       </ProfileData>
 
+      <Tabs />
       <Feed />
       <BottomMenu />
     </Container>

@@ -3,8 +3,11 @@ import Switch from 'react-switch'
 import { ThemeContext } from 'styled-components'
 import PropTypes from 'prop-types'
 
-const SwitchThemeButton = ({ toggleTheme }) => {
+import useToggleTheme from '../../utils/useToggleTheme'
+
+export default function SwitchThemeButton() {
   const { colors, title } = useContext(ThemeContext)
+  const { toggleTheme } = useToggleTheme()
 
   return (
     <Switch
@@ -15,6 +18,8 @@ const SwitchThemeButton = ({ toggleTheme }) => {
       height={10}
       width={40}
       handleDiameter={20}
+      onHandleColor="#fff"
+      offHandleColor="#000"
       offColor={colors.gray}
       onColor={colors.secondary}
     />
@@ -24,5 +29,3 @@ const SwitchThemeButton = ({ toggleTheme }) => {
 SwitchThemeButton.propTypes = {
   toggleTheme: PropTypes.func
 }
-
-export default SwitchThemeButton

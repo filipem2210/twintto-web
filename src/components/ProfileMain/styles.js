@@ -29,19 +29,16 @@ export const Header = styled.div`
   position: sticky;
   top: 0;
   background: ${props => props.theme.colors.primary};
-
   display: flex;
   align-items: center;
-
   text-align: left;
-
   padding: 8px 0 9px 13px;
   border-bottom: 1px solid ${props => props.theme.colors.outline};
 
   > button {
+    display: flex;
     padding: 8px;
     border-radius: 50%;
-
     outline: 0;
     cursor: pointer;
 
@@ -54,13 +51,11 @@ export const Header = styled.div`
 export const BackIcon = styled(ArrowLeft)`
   width: 24px;
   height: 24px;
-
   fill: ${props => props.theme.colors.twitter};
 `
 
 export const ProfileInfo = styled.div`
   margin-left: 17px;
-
   display: flex;
   flex-direction: column;
 
@@ -76,12 +71,9 @@ export const ProfileInfo = styled.div`
 
 export const Banner = styled(ProfileBanner)`
   flex-shrink: 0;
-
   width: 100%;
   height: min(33vw, 199px);
-
   position: relative;
-
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -89,11 +81,9 @@ export const Banner = styled(ProfileBanner)`
   > img {
     width: max(45px, min(135px, 22vw));
     height: max(45px, min(135px, 22vw));
-
     border: 3.75px solid ${props => props.theme.colors.primary};
     background: ${props => props.theme.colors.gray};
     border-radius: 50%;
-
     position: absolute;
     bottom: max(-60px, -10vw);
     left: 15px;
@@ -102,10 +92,8 @@ export const Banner = styled(ProfileBanner)`
 
 export const ProfileData = styled.div`
   padding: min(calc(10vw + 7px), 67px) 16px 0;
-
   display: flex;
   flex-direction: column;
-
   position: relative;
 
   > h1 {
@@ -116,7 +104,6 @@ export const ProfileData = styled.div`
   > h2 {
     font-weight: normal;
     font-size: 15px;
-
     color: ${props => props.theme.colors.gray};
   }
 
@@ -137,7 +124,6 @@ export const ProfileData = styled.div`
     > li {
       display: flex;
       align-items: center;
-
       font-size: 15px;
       color: ${props => props.theme.colors.gray};
 
@@ -152,7 +138,6 @@ export const ProfileData = styled.div`
 const iconCSS = css`
   width: 20px;
   height: 20px;
-
   color: ${props => props.theme.colors.gray};
 `
 
@@ -185,7 +170,6 @@ export const EditButton = styled(PrimaryButton)`
   position: absolute;
   top: 2vw;
   right: 7px;
-
   padding: 4px 16px;
   font-size: 13px;
 

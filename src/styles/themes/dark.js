@@ -17,6 +17,7 @@ export default {
     like: '#E8265E',
     likeHover: 'rgba(224, 36, 94, 0.1)',
     twitter: '#33A1F2',
+    bird: '#FFF',
     hover: '#011017',
     hoverButton: '#1a91da',
     hoverOutlineButton: 'rgba(29, 161, 242, 0.1)',

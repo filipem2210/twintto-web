@@ -253,6 +253,18 @@ export const ProfileHeader = styled.div`
   }
 `
 
+export const ThemeSwitchButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px ${props => props.theme.colors.outline};
+  padding: 10px;
+  font-size: 13px;
+
+  > span {
+    margin-right: 10px;
+  }
+`
+
 export const SignOut = styled.button`
   padding: 10px;
   width: 100%;

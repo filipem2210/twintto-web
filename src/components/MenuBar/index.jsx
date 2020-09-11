@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import PrimaryButton from '../PrimaryButton'
+import SwitchThemeButton from '../SwitchThemeButton'
 
 import {
   Container,
@@ -21,6 +22,7 @@ import {
   BottomSide,
   ProfileOptions,
   ProfileHeader,
+  ThemeSwitchButtonWrapper,
   SignOut,
   LoggedUser,
   Avatar,
@@ -110,6 +112,10 @@ export default function MenuBar() {
 
               <CheckIcon />
             </ProfileHeader>
+            <ThemeSwitchButtonWrapper>
+              <span>Trocar tema</span>
+              <SwitchThemeButton />
+            </ThemeSwitchButtonWrapper>
             <SignOut onClick={() => handleSignOut()}>
               Sair de @filipem2210
             </SignOut>

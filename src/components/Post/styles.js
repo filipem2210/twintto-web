@@ -42,6 +42,7 @@ export const Tweet = styled.textarea`
   resize: none;
   font-size: 20px;
   color: ${props => props.theme.colors.gray};
+  border-bottom: solid 1px transparent;
 
   &::placeholder {
     color: ${props => props.theme.colors.gray};

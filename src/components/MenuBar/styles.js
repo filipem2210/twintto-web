@@ -207,17 +207,6 @@ export const CheckIcon = styled(Check)`
 export const BottomSide = styled.div`
   position: relative;
   margin-top: 20px;
-  padding: 10px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    cursor: pointer;
-    border-radius: 25px;
-    background: ${props => props.theme.colors.hover};
-  }
 `
 
 export const ProfileOptions = styled.div`
@@ -278,6 +267,19 @@ export const SignOut = styled.button`
   &:active,
   :focus {
     outline: none;
+  }
+`
+
+export const LoggedUser = styled.div`
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+    border-radius: 25px;
+    background: ${props => props.theme.colors.hover};
   }
 `
 

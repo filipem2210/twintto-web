@@ -22,6 +22,7 @@ import {
   ProfileOptions,
   ProfileHeader,
   SignOut,
+  LoggedUser,
   Avatar,
   ProfileData,
   ProfileOptionsIcon
@@ -114,14 +115,16 @@ export default function MenuBar() {
             </SignOut>
           </ProfileOptions>
         )}
-        <Avatar src="https://pbs.twimg.com/profile_images/1260607790323830791/NGrNpCkO_bigger.jpg" />
+        <LoggedUser>
+          <Avatar src="https://pbs.twimg.com/profile_images/1260607790323830791/NGrNpCkO_bigger.jpg" />
 
-        <ProfileData>
-          <strong>old wolf</strong>
-          <span>@filipem2210</span>
-        </ProfileData>
+          <ProfileData>
+            <strong>old wolf</strong>
+            <span>@filipem2210</span>
+          </ProfileData>
 
-        <ProfileOptionsIcon />
+          <ProfileOptionsIcon />
+        </LoggedUser>
       </BottomSide>
     </Container>
   )

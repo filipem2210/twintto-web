@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 import { ReactComponent as LogoIcon } from '../../assets/logo.svg'
 import { ReactComponent as Home } from '../../assets/home.svg'
@@ -50,7 +50,7 @@ export const Logo = styled(LogoIcon)`
   margin-bottom: 10px;
   border-radius: 50%;
   padding: 5px;
-  fill: ${props => props.theme.colors.twitter};
+  fill: ${props => props.theme.colors.bird};
 
   &:hover {
     cursor: pointer;
@@ -115,6 +115,8 @@ const MenuButtonCSS = css`
 export const NavButton = styled(NavLink)`
   ${MenuButtonCSS}
 `
+
+export const NavLogo = styled(Link)``
 
 export const MenuButton = styled.a`
   ${MenuButtonCSS}
@@ -210,14 +212,19 @@ export const BottomSide = styled.div`
 `
 
 export const ProfileOptions = styled.div`
+  display: none;
   position: absolute;
-  top: -110px;
+  top: -150px;
   left: 0;
   background-color: ${props => props.theme.colors.primary};
   width: 100%;
   box-shadow: ${props => props.theme.colors.boxShadow} 0px 0px 15px,
     ${props => props.theme.colors.boxShadow} 0px 0px 3px 1px;
   border-radius: 15px;
+
+  @media (min-width: 1280px) {
+    display: block;
+  }
 
   &:after {
     content: '';

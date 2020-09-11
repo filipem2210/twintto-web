@@ -6,6 +6,7 @@ import SwitchThemeButton from '../SwitchThemeButton'
 import {
   Container,
   Topside,
+  NavLogo,
   Logo,
   NavButton,
   MenuButton,
@@ -51,7 +52,9 @@ export default function MenuBar() {
   return (
     <Container>
       <Topside>
-        <Logo />
+        <NavLogo to="/">
+          <Logo />
+        </NavLogo>
 
         <NavButton to="/" exact activeClassName="active">
           <HomeIcon />

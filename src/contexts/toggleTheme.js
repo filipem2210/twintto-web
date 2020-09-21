@@ -3,16 +3,16 @@ import PropTypes from 'prop-types'
 
 import usePersistedState from '../utils/usePersistedState'
 
-import light from '../styles/themes/light'
-import dark from '../styles/themes/dark'
+import lightTheme from '../styles/themes/light'
+import darkTheme from '../styles/themes/dark'
 
 const ThemeContext = createContext()
 
 const ThemeContextProvider = ({ children }) => {
-  const [theme, setTheme] = usePersistedState('@twintto:theme', dark)
+  const [theme, setTheme] = usePersistedState('@twintto:theme', darkTheme)
 
   const toggleTheme = () => {
-    setTheme(theme.title === 'light' ? dark : light)
+    setTheme(theme.title === 'light' ? darkTheme : lightTheme)
   }
 
   return (

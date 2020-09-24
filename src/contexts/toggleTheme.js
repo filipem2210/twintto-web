@@ -9,7 +9,7 @@ import darkTheme from '../styles/themes/dark'
 const ThemeContext = createContext()
 
 const ThemeContextProvider = ({ children }) => {
-  const [theme, setTheme] = usePersistedState('@twintto:theme', darkTheme)
+  const [theme, setTheme] = usePersistedState('@twintto:theme', lightTheme)
 
   const toggleTheme = () => {
     setTheme(theme.title === 'light' ? darkTheme : lightTheme)
